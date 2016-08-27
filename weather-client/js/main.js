@@ -2,8 +2,7 @@ requirejs.config({
     paths: {
       ko: 'vendor/knockout',
       lodash: 'vendor/lodash',
-      q: 'vendor/q',
-      qajax: 'vendor/qajax'
+      kompose: 'vendor/kompose'
     },
     map: {
       '*': {
@@ -15,10 +14,9 @@ requirejs.config({
 require([
   'lodash',
   'ko',
-  'q',
-  'qajax'
+  'kompose'
 ],
-function (_, ko, Q, Qajax) {
+function (_, ko) {
   
   function ViewModel() {
     this.city = ko.observable('Portland');
@@ -33,21 +31,16 @@ function (_, ko, Q, Qajax) {
   _.extend(ViewModel.prototype, {
     fetchWeather: function updateLatLng() {
       var self = this;
-      Qajax({
-        url: 'http://localhost:3000/weather',
-        method: 'get',
-        type: 'json',
-        contentType: 'application/json',
-        crossDomain: true,
-        params: {city: this.city(), country: this.country()}
-      }).then(Qajax.filterSuccess).
-        then(Qajax.toJSON).
-        then(function (obj) {
-          self.city(obj.city);
-          self.country(obj.country);
-          self.temp(obj.temp);
-          self.weather(obj.weather);
-        });
+      fetch(new Request('http://localhost:3000/weather?city=' + this.city() + '&country=' + this.country(), {
+        mode: 'cors'
+      })).then(function (resp) {
+        return resp.json();
+      }).then(function (obj) {
+        self.city(obj.city);
+        self.country(obj.country);
+        self.temp(obj.temp);
+        self.weather(obj.weather);
+      });
     }
   });
 
