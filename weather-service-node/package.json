@@ -1,0 +1,17 @@
+{
+  "name": "weather-service",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rob.galanakis@gmail.com",
+  "license": "Proprietary",
+  "dependencies": {
+    "express": "^4.14.0",
+    "lodash": "^4.15.0",
+    "morgan": "^1.7.0",
+    "request": "^2.74.0"
+  }
+}

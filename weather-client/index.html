@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <title>What's the weather?</title>
+    <link href="/css/main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <script src="/js/vendor/require.js" data-main="/js/main"></script>
+    <p>
+      The weather in <span data-bind="text: city"></span>, <span data-bind="text: country"></span>
+      is <span data-bind="text: temp"></span> degrees and <span data-bind="text: weatherLowerCased"></span>
+    </p>
+    <p>Fetch weather for:</p>
+    <input type="text" data-bind="value: country" placeholder="Portland">
+    <input type="text" data-bind="value: city" placeholder="US">
+    <button data-bind="click: fetchWeather">What's the Weather?</button>
+  </body>
+</html>
