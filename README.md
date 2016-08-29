@@ -19,6 +19,9 @@ Ruby TDD
 ===
 
 For this exercise, we'll do some simple TDD exercises.
+The specific exercise will depend on your experience and
+the role you're applying for.
+
 There are no libraries other than the Ruby standard library and RSpec required.
 The repo contains some placeholder code to demonstrate specs working.
 
@@ -53,25 +56,31 @@ a server. We will refactor and improve the client.
 
 It will be helpful, but not necessary, to review the following concepts/libraries:
 
-- The [`fetch`](https://davidwalsh.name/fetch) API, which is used for AJAX.
+- The basics of the
+  [fetch](https://davidwalsh.name/fetch) API for AJAX.
   We actually use `qajax` for AJAX but `fetch` is a more useful thing to know.
-  You don't need to know the details, but you should understand the concepts.
-- Understand how to handle [promises](https://davidwalsh.name/promises).
-  In particular how success and error handling and result propagation work.
-  We use `Q` for promises at Cozy but this code sample
-  uses what's available in the browser.
+  You don't need to know the details, but you should understand the concepts
+  of how AJAX works, and also how to handle promises (see below).
+- How [promises](https://davidwalsh.name/promises) work,
+  especially success and error handling and result propagation.
+  We use `Q` for promises at Cozy but this exercises uses
+  what's available natively in the browser.
 - Data binding through [KnockoutJS](http://knockoutjs.com/documentation/introduction.html).
   You can probably figure this out from the code sample that's already in `main.js`,
   but looking over a basic KnockoutJS tutorial can't hurt.
-  In particular, the concepts of observables and computeds.
+  In particular, the concepts of observables and computeds are important.
 - We use [Lodash](https://lodash.com/docs) heavily.
   If you know it, great, if you don't, that's ok too,
-  we'll figure out what we need from the docs.
+  we'll figure out what we need as we go.
 - We also use [kompose](https://github.com/pietvanzoen/knockout-kompose)
   to tie together Knockout and Lodash, but unless you're already very interested
-  in functional programming, it's no super important to understand Kompose.
-- We use [RequireJS](https://requirejs.org) for module loading,
-  but it's not really important to understand it.
+  in functional programming, it's not super important to understand Kompose.
+- Module loading through [RequireJS](https://requirejs.org),
+  but it's not really important to understand it for this exercise.
+
+Again, you won't be "quizzed" on any of these topics;
+these are just things that we'll use to varying degrees
+as we write our code.
 
 First we need to get the server running.
 Ensure you have a relatively current version of Node and NPM installed.
