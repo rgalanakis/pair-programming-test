@@ -22,6 +22,19 @@ Weather Service
 This exercise involves writing a client to render weather information from
 a server. We will refactor and improve the client.
 
+The client looks like this to start with:
+
+![weather service screenshot](https://www.dropbox.com/s/tioowiekqy8dq4f/Screenshot%202016-08-28%2022.15.11.png?dl=1)
+
+Beautiful, right? It's even worse when you try to use it!
+
+The iterations will be mostly driven by what you want to do
+and what you're comfortable with,
+but there will be some things I'll cover with everyone.
+
+Concepts
+====
+
 It will be helpful, but not necessary, to review the following concepts/libraries:
 
 - The basics of the
@@ -49,6 +62,9 @@ It will be helpful, but not necessary, to review the following concepts/librarie
 Again, you won't be "quizzed" on any of these topics;
 these are just things that we'll use to varying degrees
 as we write our code.
+
+Instructions
+====
 
 First we need to get the server running.
 Ensure you have a relatively current version of Node and NPM installed.
@@ -94,6 +110,9 @@ the role you're applying for.
 
 There are no libraries other than the Ruby standard library and RSpec required.
 The repo contains some placeholder code to demonstrate specs working.
+
+Instructions
+====
 
 Make sure you have Ruby 2.2+ and rspec 3.0+ installed (we're using Ruby 2.2 and RSpec 3.2).
 You can use rbenv/RVM and bundler for this, or install into system Ruby, whatever you want.
