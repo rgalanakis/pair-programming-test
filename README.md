@@ -15,38 +15,6 @@ and tell your interviewer if you run into any problems.
 
 The actual steps/requirements of the exercise will be discussed during the interview.
 
-Ruby TDD
-===
-
-For this exercise, we'll do some simple TDD exercises.
-The specific exercise will depend on your experience and
-the role you're applying for.
-
-There are no libraries other than the Ruby standard library and RSpec required.
-The repo contains some placeholder code to demonstrate specs working.
-
-Make sure you have Ruby 2.2+ and rspec 3.0+ installed (we're using Ruby 2.2 and RSpec 3.2).
-You can use rbenv/RVM and bundler for this, or install into system Ruby, whatever you want.
-There are a few helper files already in the repo to make using a version manager and bundler easier for you.
-Ideally it's just a `bundle install` in the `ruby-tdd` directory.
-
-Logic goes in `app.rb` and specs go in `specs.rb`.
-
-Once you're all set up, run the specs to make sure things are working:
-
-```
-$ cd ruby-tdd/
-$ rspec specs.rb 
-
-the programming test
-  works on my machine!
-
-Finished in 0.00084 seconds (files took 0.11766 seconds to load)
-1 example, 0 failures
-```
-
-The existing code in `app.rb` and `specs.rb` can be cleared out.
-
 
 Weather Service
 ===
@@ -115,3 +83,36 @@ Finally, open a browser to `http://localhost:1025`.
 Press the button and ensure everything is working.
 
 Most of our work will be in the `index.html`, `main.js`, and `main.css` files.
+
+
+Ruby TDD
+===
+
+For this exercise, we'll do some simple TDD exercises.
+The specific exercise will depend on your experience and
+the role you're applying for.
+
+There are no libraries other than the Ruby standard library and RSpec required.
+The repo contains some placeholder code to demonstrate specs working.
+
+Make sure you have Ruby 2.2+ and rspec 3.0+ installed (we're using Ruby 2.2 and RSpec 3.2).
+You can use rbenv/RVM and bundler for this, or install into system Ruby, whatever you want.
+There are a few helper files already in the repo to make using a version manager and bundler easier for you.
+Ideally it's just a `bundle install` in the `ruby-tdd` directory.
+
+Logic goes in `app.rb` and specs go in `specs.rb`.
+
+Once you're all set up, run the specs to make sure things are working:
+
+```
+$ cd ruby-tdd/
+$ rspec specs.rb 
+
+the programming test
+  works on my machine!
+
+Finished in 0.00084 seconds (files took 0.11766 seconds to load)
+1 example, 0 failures
+```
+
+The existing code in `app.rb` and `specs.rb` can be cleared out.
