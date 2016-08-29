@@ -87,7 +87,7 @@ Serving on http://localhost:3000
 In another shell, ensure the server is working:
 
 ```
-$ curl http://localhost:3000/weather
+$ curl 'http://localhost:3000/weather?city=Portland&country=US'
 {"city":"Portland","country":"US","temp":26.480000000000018,"tempMin":25,"tempMax":28.33000000000004,"weather":"Clouds","windSpeed":3.1,"windDirection":20}
 ```
 

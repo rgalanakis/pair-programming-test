@@ -29,7 +29,7 @@ function (_, ko) {
     }, this);
   }
   _.extend(ViewModel.prototype, {
-    fetchWeather: function updateLatLng() {
+    fetchWeather: function fetchWeather() {
       var self = this;
       fetch(new Request('http://localhost:3000/weather?city=' + this.city() + '&country=' + this.country(), {
         mode: 'cors'
