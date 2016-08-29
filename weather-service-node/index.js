@@ -15,13 +15,17 @@ app.use(morgan('combined'));
 var WEATHER_KEY = process.env.OPENWEATHER_API_KEY;
 
 app.get('/weather', function (req, res) {
-	var city = req.query.city || 'Portland';
-	var country = req.query.country || 'US';
+	if (!req.query.city || !req.query.country) {
+		res.status(400).json({message: '"city" and "country" are required.'});
+		return;
+	}
 	if (Math.random() < 0.10) {
 		res.status(500).send('Expect the unexpected!');
 		return;
 	}
-	request.get({url: 'http://api.openweathermap.org/data/2.5/weather?q=' + city + ',' + country + '&appid=' + WEATHER_KEY, json: true}, function(err, wres, body) {
+	var url = 'http://api.openweathermap.org/data/2.5/weather?q=' +
+		req.query.city + ',' + req.query.country + '&appid=' + WEATHER_KEY;
+	request.get({url: url, json: true}, function(err, wres, body) {
 		if (err) {
 			console.log('Error!');
 			console.log(err);
