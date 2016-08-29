@@ -101,7 +101,8 @@ Serving HTTP on 0.0.0.0 port 1025 ...
 ```
 
 Finally, open a browser to `http://localhost:1025`.
-Press the button and ensure everything is working.
+Press the button and ensure everything is working
+(if you don't have an API key, you'll get a 500 error, that's ok).
 
 Most of our work will be in the `index.html`, `main.js`, and `main.css` files.
 
