@@ -9,6 +9,11 @@ We want to make sure you can be successful and happy in a highly collaborative e
 we don't particularly care if you know obscure features of RSpec
 or know everything about promises.
 
+Ideally we are working on your machine,
+either remotely or at the Cozy office.
+Programming is much easier when you're using familiar equipment and tools!
+Instructions for remote pairing will be sent out ahead of the interview.
+
 The instructions for getting each exercise up and running are in this README.
 When possible, please make sure you go through those steps beforehand,
 and tell your interviewer if you run into any problems.
