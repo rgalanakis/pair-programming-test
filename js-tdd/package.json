@@ -1,0 +1,24 @@
+{
+  "name": "js-tdd",
+  "version": "0.0.1",
+  "description": "TDD exercise for JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rgalanakis/pair-programming-test.git"
+  },
+  "author": "rob.galanakis@gmail.com",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/rgalanakis/pair-programming-test/issues"
+  },
+  "homepage": "https://github.com/rgalanakis/pair-programming-test#readme",
+  "dependencies": {
+    "jasmine": "^2.4.1",
+    "jasmine-node": "^1.14.5",
+    "lodash": "^4.15.0"
+  }
+}

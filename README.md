@@ -110,7 +110,8 @@ Most of our work will be in the `index.html`, `main.js`, and `main.css` files.
 Ruby TDD
 ===
 
-For this exercise, we'll do some simple TDD exercises.
+For this exercise, we'll do some simple Test Driven Development
+using Ruby.
 The specific exercise will depend on your experience and
 the role you're applying for.
 
@@ -141,3 +142,43 @@ Finished in 0.00084 seconds (files took 0.11766 seconds to load)
 ```
 
 The existing code in `app.rb` and `specs.rb` can be cleared out.
+
+
+JavaScript TDD
+===
+
+For this exercise, we'll do some simple Test Driven Development
+using JavaScript (node).
+
+The specific exercise will depend on your experience and
+the role you're applying for.
+
+Lodash is available, but it's not necessary to use.
+
+Instructions
+====
+
+Just `npm install` and you should be on your way.
+
+```
+$ cd js-tdd/
+$ npm install
+js-tdd@0.0.1 /Users/rgalanakis/dev/pair-programming-test/js-tdd
+# and lots of other output!
+$ npm test
+
+> js-tdd@0.0.1 test /Users/rgalanakis/dev/pair-programming-test/js-tdd
+> jasmine
+
+Started
+.
+
+
+1 spec, 0 failures
+Finished in 0.006 seconds
+```
+
+Make sure you get the "1 spec" output, if you see "0 spec",
+something is wrong.
+
+All of our code will go into `js-tdd/spec/spec.js`.
