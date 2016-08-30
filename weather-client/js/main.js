@@ -24,7 +24,7 @@ function (_, ko) {
     this.temp = ko.observable(20);
     this.weather = ko.observable('Clear');
 
-    this.weatherLowerCased = ko.pureComputed(function () {
+    this.weatherLowerCased = ko.computed(function () {
       return this.weather().toLowerCase();
     }, this);
   }
