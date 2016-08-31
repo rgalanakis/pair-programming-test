@@ -33,9 +33,9 @@ The client looks like this to start with:
 
 Beautiful, right? It's even worse when you try to use it!
 
-The iterations will be mostly driven by what you want to do
-and what you're comfortable with,
-but there will be some things I'll cover with everyone.
+I'll start by guiding the work with a few low hanging improvements.
+After that, changes will be open ended and we can spend time working
+on improvements that are most interesting to you.
 
 Concepts
 =====
