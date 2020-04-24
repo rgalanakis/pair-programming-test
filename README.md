@@ -95,6 +95,25 @@ something is wrong.
 
 All of our code will go into `js-tdd/spec/spec.js`.
 
+C++ TDD
+===
+
+We aren't using a test framework for this, for the sake fo simplicity.
+Instead, we'll use the boilerplate in `main.cpp` to run tests,
+and modify `cpp-tdd/Makefile` to add test cases.
+
+To make sure this works:
+
+```
+$ cd cpp-tdd/
+$ make run 
+Input: Hello Universe!, Result: Yo!, Expected: Yo!
+pass
+Input: Hello Universe!, Result: Yo!, Expected: Hi!
+FAIL
+```
+
+If that fails to compile, modify the `Makefile` to use whatever compiler you are using.  
 
 Weather Service
 ===
