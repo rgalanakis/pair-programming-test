@@ -95,6 +95,33 @@ something is wrong.
 
 All of our code will go into `js-tdd/spec/spec.js`.
 
+Golang TDD
+===
+
+For this exercise, we'll do some simple Test Driven Development
+using Go.
+
+The specific exercise will depend on your experience and
+the role you're applying for.
+
+Instructions
+=====
+
+You will need Go installed (via Homebrew or whatever else).
+Then:
+
+```
+$ cd go-tdd
+$ make test
+ok  	github.com/rgalanakis/pair-programming-test	0.251s
+```
+
+All of our code will go into `go-tdd/main.go` and `go-tdd/main_test.go`.
+
+The repo is set up with Ginkgo and Gomega, two "BDD-style" testing libraries.
+You can use standard `testing.T`-based tests if you'd like to instead,
+though we encourage you to try the BDD style if you're not used to it.
+
 C++ TDD
 ===
 
