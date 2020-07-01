@@ -95,6 +95,41 @@ something is wrong.
 
 All of our code will go into `js-tdd/spec/spec.js`.
 
+Python TDD
+===
+
+For this exercise, we'll do some simple Test Driven Development using Python.
+The specific exercise will depend on your experience and
+the role you're applying for.
+
+There are no libraries other than the Python standard library required.
+The repo contains some placeholder code to demonstrate tests are working.
+
+Instructions
+=====
+
+Because we're using Python, and don't need any 3rd party libraries,
+we don't need to worry about package managers or environments.
+Make sure you have Python 3.6+ available and you're good to go:
+
+```
+$ python3 --version
+ Python 3.7.3
+```
+
+Then we can open the directory and make sure the tests work:
+
+```
+$ cd python-tdd/
+$ python3 -m unittest test.py
+x is 2
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+```
+
 Golang TDD
 ===
 
